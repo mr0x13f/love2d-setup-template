@@ -1,6 +1,6 @@
 {
     "recommendations": [
-        "keyring.Lua",
+        "sumneko.lua",
         "tomblind.local-lua-debugger-vscode",
         "pixelbyte-studios.pixelbyte-love2d",
     ]

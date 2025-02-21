@@ -1,13 +1,14 @@
+if os.getenv("LOCAL_LUA_DEBUGGER_VSCODE") == "1" then
+    require("lldebugger").start()
+end
+
 require "util"
+
+lockGlobals()
 
 function love.load()
 
-    enableDebugging()
-
     print("Hello world?")
-    
-    -- After this you can no longer (accidentally) create global variables
-    lockGlobals()
 
 end
 
