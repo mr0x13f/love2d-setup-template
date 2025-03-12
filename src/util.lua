@@ -4,3 +4,7 @@ function lockGlobals()
         __index    = function (_, n) error("attempt to read undeclared global variable after lockGlobals()"..n, 2) end,
     })
 end
+
+function unlockGlobals()
+    setmetatable(_G, nil)
+end
